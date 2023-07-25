@@ -5,51 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit burst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .lato {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .transform-x {
+            transform: rotateY(3.142rad);
+        }
+
+        .transform-y {
+            transform-origin: center;
+            transform: rotateY(-3.142rad);
+        }
+    </style>
 </head>
 
-<body>
+
+<body class="lato">
     <!-- Nav section -->
     <nav>
-        <div class="navbar bg-base-100 max-w-6xl my-12 mx-auto rounded-[3rem] lg:bg-[#F85559] lg:text-white">
+        <div
+            class="navbar bg-base-100 max-w-sm md:max-w-2xl lg:max-w-6xl my-12 mx-auto rounded-[3rem] lg:bg-[#F85559] lg:text-white relative z-[20]">
             <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
-                  <li><a>Home</a></li>
-                  <li><a>About us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                </ul>
-              </div>
-              <div class="hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-lg ">
-                    <li><a>Home</a></li>
-                    <li><a>About us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                  </ul>
-              </div>
-              
+                <div class=" flex lg:hidden ">
+
+                    <a class="btn btn-ghost normal-case text-4xl my-auto h-fit"><img src="./images/logo.png"
+                            alt="">Fruit
+                        Burst</a>
+                </div>
+
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg ">
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="navbar-center ">
-              
-              <a class="btn btn-ghost normal-case text-4xl my-auto h-fit"><img src="./images/logo.png" alt="">Fruit Burst</a>
+            <div class="navbar-center hidden lg:flex ">
+
+                <a class="btn btn-ghost normal-case text-4xl my-auto h-fit"><img src="./images/logo.png" alt="">Fruit
+                    Burst</a>
             </div>
 
-            <div class="navbar-end hidden lg:flex">
-                <input type="text" placeholder="Search here" class="input input-bordered text-black rounded-3xl input-md w-full max-w-xs relative " />
-              <a class="btn border-none p-0 bg-transparent absolute"><img src="./images/Frame.svg" alt=""></a>
+            <div class="navbar-end ">
+                <input type="text" placeholder="Search here"
+                    class="input input-bordered text-black rounded-3xl input-md w-full max-w-xs relative hidden lg:flex " />
+                <a class="btn border-none p-0 bg-transparent absolute hidden lg:flex"><img src="./images/Frame.svg"
+                        alt=""></a>
+
+
+                <div class="dropdown transform-x ">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[20] p-2 shadow bg-base-100 rounded-box w-52 text-black ">
+                        <li class="transform-y z-[20]"><a>Home</a></li>
+                        <li class="transform-y z-[20] "><a>About us</a></li>
+                        <li class="transform-y z-[20] "><a>Shop</a></li>
+                        <li class="transform-y z-[20]"><a>All Fruits</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </div>
     </nav>
     <!-- end of nav section -->
     <!-- banner section starts -->
-    <section class="max-w-6xl my-12 mx-auto">
+    <section class="max-w-6xl my-12 mx-auto z-0">
+        <div class="hero max-w-xs mx-auto md:max-w-2xl lg:min-h-[30rem] lg:max-w-6xl relative"
+            style="background-image: url('./images/banner4.png');">
+            <div class="hero-overlay bg-gradient-to-r from-[#121212] to-transparent"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md ">
+                    <h1 class="mb-5 text-5xl font-bold relative z-0">Exotic tastes at your doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn btn-primary border-none bg-[#F85559] text-white">Shop now</button>
+
+                </div>
+
+            </div>
+            
+                <div class="hidden lg:flex max-w-5xl bg-white absolute bottom-[-3rem] shadow-sm rounded-lg">
+                    <img src="./images/fruit1.png" alt="">
+                    <img src="./images/fruit2.png" alt="">
+                    <img src="./images/fruit3.png" alt="">
+                    <img src="./images/fruit4.png" alt="">
+                    <img src="./images/fruit5.png" alt="">
+
+                
+            </div>
+        </div>
 
     </section>
 </body>
