@@ -60,8 +60,8 @@
             <div class="navbar-end ">
                 <input type="text" placeholder="Search here"
                     class="input input-bordered text-black rounded-3xl input-md w-full max-w-xs relative hidden lg:flex " />
-                <a class="btn border-none p-0 bg-transparent absolute hidden lg:flex"><img src="./images/Frame.svg"
-                        alt=""></a>
+                <a class="btn border-none p-0 bg-transparent absolute right-7 hidden lg:flex"><img
+                        src="./images/Frame.svg" alt=""></a>
 
 
                 <div class="dropdown transform-x ">
@@ -73,7 +73,10 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[20] p-2 shadow bg-base-100 rounded-box w-52 text-black ">
+                        class="menu menu-sm dropdown-content bg-[#F85559] mt-3 z-[20] p-2 shadow bg-base-100 rounded-box w-52 text-white ">
+
+
+
                         <li class="transform-y z-[20]"><a>Home</a></li>
                         <li class="transform-y z-[20] "><a>About us</a></li>
                         <li class="transform-y z-[20] "><a>Shop</a></li>
@@ -296,50 +299,60 @@
     <section class=" max-w-sm md:max-w-2xl  lg:max-w-6xl my-0 mx-auto relative z-0">
         <div class="grid gap-5 grid-cols-1 lg:grid-cols-2 relative z-0">
             <div class="max-w-sm mx-auto lg:max-w-6xl">
-                <h1 class=" text-4xl lg:text-5xl text-center lg:text-left">
+                <h1 class=" text-4xl lg:text-5xl font-extrabold text-center lg:text-left">
                     Deal of the day
                 </h1>
                 <br>
                 <p class=" text-sm lg:text-base text-center lg:text-left">
-                    Here you can find our deals of the day. You can chose your preferable one from here which full fills your need. So have a look at our limited time offers!
-                
+                    Here you can find our deals of the day. You can chose your preferable one from here which full fills
+                    your need. So have a look at our limited time offers!
+
                 </p>
             </div>
 
 
-            <div class="grid grid-flow-col gap-5 justify-self-center lg:justify-self-end text-center auto-cols-max">
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:15;"></span>
-                  </span>
-                  days 
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:10;"></span>
-                  </span>
-                  hours
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:24;"></span>
-                  </span>
-                  min
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:34;"></span>
-                  </span>
-                  sec
+            <div class="grid grid-flow-col gap-3 justify-self-center lg:justify-self-center text-center auto-cols-max">
+                <div class="flex flex-col ">
+                    <span class="countdown font-mono text-5xl mr-3">
+                        <span style="--value:29;"></span>
+                    </span>
+                    days
                 </div>
-              </div>
+                <div class="flex flex-col  ">
+                    <span class="dots text-5xl transform rotate-90">...</span>
+                </div>
+                <div class="flex flex-col  mr-3">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                    </span>
+                    hours
+                </div>
+                <div class="flex flex-col">
+                    <span class="dots text-5xl transform rotate-90">...</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl mr-3">
+                        <span style="--value:25;"></span>
+                    </span>
+                    min
+                </div>
+                <div class="flex flex-col">
+                    <span class="dots text-5xl transform rotate-90">...</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl mr-3">
+                        <span style="--value:08;"></span>
+                    </span>
+                    sec
+                </div>
+            </div>
             
-                    
-                
-        
-            
-                
-            
+
+
+
+
+
+
         </div>
         <!-- card section -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-6">
@@ -875,7 +888,7 @@
                         </svg></a>
                 </div>
             </div>
-            
+
         </section>
     </footer>
 </body>
